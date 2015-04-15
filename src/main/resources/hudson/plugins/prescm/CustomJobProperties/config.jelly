@@ -1,0 +1,10 @@
+
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define"
+         xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+    <f:optionalBlock field="enableFlag" title="Execute Pre-SCM command">
+        <f:entry title="Shell Command" >
+            <f:textarea field="shellCommand" 
+            checkUrl="'${rootURL}/jobProperty/CustomJobProperties/executableCheck?value='+escape(this.value)" />
+        </f:entry>
+    </f:optionalBlock>
+</j:jelly>
